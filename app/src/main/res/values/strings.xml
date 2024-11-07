@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Verstka</string>
+    <string-array name="movie">
+        <item>Avatar</item>
+        <item>Back to the Future</item>
+        <item>Braveheart</item>
+        <item>Casablanca</item>
+        <item>Citizen Kane</item>
+        <item>Forrest Gump</item>
+        <item>Gladiator</item>
+        <item>Goodfellas</item>
+        <item>Inception</item>
+        <item>Interstellar</item>
+        <item>Jaws</item>
+        <item>Jurassic Park</item>
+        <item>Lawrence of Arabia</item>
+        <item>Mad Max: Fury Road</item>
+        <item>Parasite</item>
+        <item>Pulp Fiction</item>
+        <item>Raiders of the Lost Ark</item>
+        <item>Star Wars: A New Hope</item>
+        <item>The Dark Knight</item>
+        <item>The Godfather</item>
+        <item>The Godfather Part II</item>
+        <item>The Green Mile</item>
+    </string-array>
+
+    <string-array name="cities">
+        <item>Barnaul</item>
+        <item>Belgorod</item>
+        <item>Cheboksary</item>
+        <item>Chelyabinsk</item>
+        <item>Chita</item>
+        <item>Ekaterinburg</item>
+        <item>Ivanovo</item>
+        <item>Irkutsk</item>
+        <item>Izhevsk</item>
+        <item>Kazan</item>
+        <item>Kemerovo</item>
+        <item>Khabarovsk</item>
+        <item>Krasnodar</item>
+        <item>Krasnoyarsk</item>
+        <item>Kursk</item>
+        <item>Magnitogorsk</item>
+        <item>Moscow</item>
+        <item>Murmansk</item>
+        <item>Nizhny Novgorod</item>
+        <item>Novokuznetsk</item>
+        <item>Novosibirsk</item>
+        <item>Omsk</item>
+        <item>Orenburg</item>
+        <item>Penza</item>
+        <item>Perm</item>
+        <item>Rostov-on-Don</item>
+        <item>Ryazan</item>
+        <item>Samara</item>
+        <item>Saint Petersburg</item>
+        <item>Saratov</item>
+        <item>Smolensk</item>
+        <item>Sochi</item>
+        <item>Stavropol</item>
+        <item>Surgut</item>
+        <item>Tambov</item>
+        <item>Tolyatti</item>
+        <item>Tomsk</item>
+        <item>Tula</item>
+        <item>Tyumen</item>
+        <item>Ufa</item>
+        <item>Ulan-Ude</item>
+        <item>Ulyanovsk</item>
+        <item>Vladivostok</item>
+        <item>Vladimir</item>
+        <item>Volgograd</item>
+        <item>Vologda</item>
+        <item>Voronezh</item>
+        <item>Yaroslavl</item>
+    </string-array>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColor"
+    tools:context=".MainActivity">
+
+
+        <!-- список для города вылета -->
+        <Spinner
+            android:id="@+id/spinner_departure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/secondaryColor"
+            android:textColorHint="@color/textColor"
+            android:entries="@array/cities"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="Departure city"/>
+
+        <!-- список для города прилёта -->
+        <Spinner
+            android:id="@+id/spinner_arrival"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/secondaryColor"
+            android:textColorHint="@color/textColor"
+            android:entries="@array/cities"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/spinner_departure"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="Arrival city"/>
+
+        <!-- дата вылета -->
+        <EditText
+            android:id="@+id/editText_departure_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/secondaryColor"
+            android:textColorHint="@color/textColor"
+            android:inputType="date"
+            android:hint="Дата прибытия"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/spinner_arrival"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- дата прилёта -->
+        <EditText
+            android:id="@+id/editText_return_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/secondaryColor"
+            android:textColorHint="@color/textColor"
+            android:inputType="date"
+            android:hint="Дата возвращения"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/editText_departure_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- количество взрослых пассажиров -->
+        <EditText
+            android:id="@+id/editText_adults"
+            android:layout_width="0dp"
+            android:background="@color/secondaryColor"
+            android:textColorHint="@color/textColor"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Взрослых"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/editText_return_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- количество детей -->
+        <EditText
+            android:id="@+id/editText_children"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/secondaryColor"
+            android:textColorHint="@color/textColor"
+            android:inputType="number"
+            android:hint="Детей"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/editText_adults"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- количество младенцев -->
+        <EditText
+            android:id="@+id/editText_infants"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/secondaryColor"
+            android:textColorHint="@color/textColor"
+            android:inputType="number"
+            android:hint="Младенцев"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/editText_children"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- поиск -->
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primaryColor"
+            android:textColor="@color/textColor"
+            android:text="Поиск"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/editText_infants"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
